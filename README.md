@@ -1,2 +1,2 @@
 # ProgrammingLogic
-C# console labs
+Lab projects for IT-1050 - Programming Logic
