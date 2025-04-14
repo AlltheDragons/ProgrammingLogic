@@ -27,8 +27,21 @@ class Program
         }
         /* Problem 4: Do/While User Input
         Use a do/while loop to prompt the user to enter a number greater than 100.
-        Repeat until a valid number is entered.*/
-        
+        Repeat until a valid number is entered.*/ 
+        int input;
+        do
+        {
+            Console.Write("Please enter a number greater than 100: ");
+            input = Convert.ToInt32(Console.ReadLine());
+            if (input > 100)
+            {
+                Console.WriteLine("You entered a number greater than 100.");
+            }
+            else
+            {
+                Console.WriteLine("You didn't enter a number greater than 100.");
+            }
+        } while (input <= 100);
         /* Problem 5: While Loop – Multiples of 10 from 10 to 1000
         Use a while loop to print all multiples of 10 starting at 10 and ending at 1000 (inclusive).*/
         int e = 10;
