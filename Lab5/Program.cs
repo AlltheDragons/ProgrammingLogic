@@ -18,7 +18,7 @@ class Program
     }
     /* Problem 2: Days of the Week (1–7)
     create array and have user input display array contents*/
-    /*string[] days = new string[7];
+    string[] days = new string[7];
     days[0] = "Monday";
     days[1] = "Tuesday";
     days[2] = "Wednesday";
@@ -43,7 +43,7 @@ class Program
         {
             Console.WriteLine("You didn't enter a valid number.");
         }
-    }*/
+    }
     /* Problem 3: Favorite Books and Authors
     create arrays and order them based on contents*/
     //declare arrays
