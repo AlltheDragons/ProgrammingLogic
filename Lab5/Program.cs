@@ -26,24 +26,11 @@ class Program
     days[4] = "Friday";
     days[5] = "Saturday";
     days[6] = "Sunday";
-    int input;
-    foreach (string name in days)
-    {
-        Console.Write("Enter a number (1-7) for a day of the week:");
-        input = Convert.ToInt32(Console.ReadLine());
-        if (input > 0)
-        {
-            Console.WriteLine("Day " + input + " = " + days[input - 1]);
-        }
-        else if (input < 7)
-        {
-            Console.WriteLine("Day " + input + " = " + days[input - 1]);
-        }
-        else
-        {
-            Console.WriteLine("You didn't enter a valid number.");
-        }
-    }
+    Console.Write("Enter a number (1-7) for a day of the week: ");
+    int input = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine("Day " + input + " = " + days[input-1]);
+    
     /* Problem 3: Favorite Books and Authors
     create arrays and order them based on contents*/
     //declare arrays
