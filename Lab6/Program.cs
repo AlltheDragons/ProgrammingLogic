@@ -16,6 +16,26 @@ class Car
     Console.WriteLine("Color: " + color);
     Console.WriteLine("Year: " + year);
   }
+  //problem 1: print
+  public void Start()
+    {
+        Console.WriteLine("The car is starting.");
+    }
+  //problem 2: print
+  public void Drive(int miles)
+    {
+      Console.WriteLine($"The car drove {miles} miles.");
+    }
+  //problem 3: return string
+  public string GetDescription()
+    {
+        return $"{year} {color} {model}";
+    }
+  //proble 4: method
+  public void Repaint(string newColor)
+    {
+        color = newColor;
+    }
 }
 
 class Program
@@ -27,7 +47,16 @@ class Program
     myCar.model = "Civic";
     myCar.color = "Black";
     myCar.year = 2020;
-
     myCar.Display(); // Calling the Display method
+    // problem 1: call method
+    myCar.Start();
+    // problem 2: call method
+    myCar.Drive(50);
+    // problem 3: store result
+    string description = myCar.GetDescription();
+      Console.WriteLine(description);
+    //problem 4: print repainting
+    myCar.Repaint("Red");
+      Console.WriteLine($"The car has been repainted to {myCar.color}.");
   }
 }
